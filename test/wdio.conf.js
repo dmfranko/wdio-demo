@@ -59,9 +59,9 @@ exports.config = {
     //
     capabilities: [{
         browserName: 'IE',
-        platform: 'Windows 10',
+        platform: 'WINDOWS',
         version: '11',
-        name: 'chrome test',
+        name: 'ie test',
         build: 'test'
     }],
     //
