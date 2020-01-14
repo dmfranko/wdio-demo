@@ -12,7 +12,7 @@ exports.config = {
     // according to your user and key information. However if you are using a private Selenium
     // backend you should define the host address and port here.
     //
-    host: '0.0.0.0',
+    host: 'hub-cloud.browserstack.com/wd/hub',
     port: 4445,
     //
     // =================
