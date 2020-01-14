@@ -62,7 +62,7 @@ exports.config = {
         platform: 'Windows 10',
         version: '11',
         name: 'chrome test',
-        build: BUILD_ID
+        build: 'test'
     }],
     //
     // ===================
