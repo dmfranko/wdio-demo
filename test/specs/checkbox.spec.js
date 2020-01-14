@@ -2,7 +2,7 @@ describe('checkboxes', function() {
 
     it('checkbox 2 should be enabled', function*() {
         yield browser.url('/checkboxes');
-        yield browser.isSelected('#checkboxes input:last-Child').then(function(isSelected) {
+        yield browser.isSelected('#checkbo input:last-Child').then(function(isSelected) {
             expect(isSelected).toBe(true);
         });
     });
