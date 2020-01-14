@@ -118,7 +118,15 @@ exports.config = {
     // Test reporter for stdout.
     // The following are supported: dot (default), spec and xunit
     // see also: http://webdriver.io/guide/testrunner/reporters.html
-    reporter: 'dot',
+    reporters: [
+        'dot',
+        ['junit', {
+            outputDir: './',
+            outputFileFormat: function(options) { // optional
+                return `results-${options.cid}.${options.capabilities}.xml`
+            }
+        }]
+    ],
     //
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
